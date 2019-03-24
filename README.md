@@ -1,6 +1,6 @@
 # KeaRatingApp - Mandatory Assignment 1 
-## _Courses: Android App._
-## _Semester: 2019_
+_Courses: Android App._
+_Semester: 2019_
 This is my description of how i have followed the requirements for the mandatory assignment
 ## Requirements
 * I have made a design that is very linear and should be easy to understand. I would have wanted to make the teachers change depending on what subject was chosen in the above spinner, but did not get the time. 
