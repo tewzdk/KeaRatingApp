@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Used primarily on loginpage -->
+    <string name="app_name">KeaRatingApp</string>
+    <string name="frontTitle">KeaRatingApp</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <!-- The strings that will be rated -->
+    <string name="subrelevans">Subject relevance</string>
+    <string name="overallperformance">Teacher overall performance</string>
+    <string name="teacherprep">Teacher preparation</string>
+    <string name="amountfeedback">Amount of feedback</string>
+    <string name="teacherexamples">How good their examples are</string>
+    <string name="jobopportunity">Job opportunities</string>
+
+    <!-- Succesful rate -->
+    <string name="success_body">Your rating of the teacher has now been completed, and an email has been sent to the teacher.</string>
+    <string name="logout">Logout</string>
+
+    <!-- Picking a class to rate -->
+    <string name="teacher">Select your teacher</string>
+    <string name="semester">Select your semester</string>
+    <string name="subject">Select your subject</string>
+
+    <!-- Arrays for spinners -->
+    <string-array name="teachers">
+        <item>Lone E</item>
+        <item>Bente P</item>
+        <item>Karl C</item>
+    </string-array>
+
+    <string-array name="semesters">
+        <item>1. semester</item>
+        <item>2. semester</item>
+        <item>3. semester</item>
+        <item>4. semester</item>
+    </string-array>
+
+    <string-array name="subjects1">
+        <item>Software Konstruktion</item>
+        <item>Software Design</item>
+        <item>ITO</item>
+    </string-array>
+
+    <string-array name="subjects2">
+        <item>Software Konstruktion</item>
+        <item>Software Design</item>
+        <item>ITO</item>
+        <item>Tech</item>
+
+    </string-array>
+
+
+    <string-array name="subjects3">
+        <item>Software Konstruktion</item>
+        <item>Software Design</item>
+        <item>Tech</item>
+    </string-array>
+
+
+    <string-array name="subjects4">
+        <item>Android App</item>
+        <item>Android Games</item>
+        <item>Angular</item>
+        <item>C</item>
+        <item>IOS</item>
+        <item>Python</item>
+    </string-array>
+</resources>
