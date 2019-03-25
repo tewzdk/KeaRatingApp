@@ -16,7 +16,7 @@ public class Subject extends AppCompatActivity {
     TextView txt_subrel,txt_perf, txt_prep, txt_feedback,txt_example,txt_opportunity;
     SeekBar sb_subrel, sb_perf, sb_prep, sb_feedback, sb_examples, sb_opportunity;
     TextView show_subrel, show_perf,show_prep,show_feedback,show_example,show_opportunity;
-    Button createRating, successLogout;
+    Button createRating;
     TextView title;
     SendEmail sendEmail;
     Intent intent;
@@ -195,13 +195,6 @@ public class Subject extends AppCompatActivity {
         success_title = findViewById(R.id.success_username);
         success_title.setText("Thank you "+parseClass.getUsername() + "!");
         success_body = findViewById(R.id.success_textfield);
-        successLogout = findViewById(R.id.success_logout_btn);
-    }
-
-    public void logout(View view){
-
-        setContentView(R.layout.activity_main);
-
     }
 
     @Override

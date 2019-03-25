@@ -17,6 +17,7 @@
     <!-- Succesful rate -->
     <string name="success_body">Your rating of the teacher has now been completed, and an email has been sent to the teacher.</string>
     <string name="logout">Logout</string>
+    <string name="submit">Submit</string>
 
     <!-- Picking a class to rate -->
     <string name="teacher">Select your teacher</string>
