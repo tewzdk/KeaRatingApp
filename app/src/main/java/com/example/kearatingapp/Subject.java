@@ -14,14 +14,12 @@ import com.example.kearatingapp.Service.SendEmail;
 public class Subject extends AppCompatActivity {
 
     TextView txt_subrel,txt_perf, txt_prep, txt_feedback,txt_example,txt_opportunity;
-    SeekBar sb_subrel, sb_perf, sb_prep, sb_feedback, sb_examples, sb_opportunity;
     TextView show_subrel, show_perf,show_prep,show_feedback,show_example,show_opportunity;
+    SeekBar sb_subrel, sb_perf, sb_prep, sb_feedback, sb_examples, sb_opportunity;
+    TextView success_title, success_body, title;
     Button createRating;
-    TextView title;
     SendEmail sendEmail;
     Intent intent;
-
-    TextView success_title, success_body;
 
     @Override
 
@@ -32,7 +30,6 @@ public class Subject extends AppCompatActivity {
         sendEmail = new SendEmail();
         intent = getIntent();
         final ParseClass parseClass = intent.getParcelableExtra("subject");
-
 
         title = findViewById(R.id.subjectTitle);
         title.setText("Rate " + parseClass.getTeacher() + " In " + parseClass.getSubject()+ " on the following parameters:");
@@ -174,6 +171,8 @@ public class Subject extends AppCompatActivity {
     public void submit(ParseClass parseClass) {
         String subjectTitle = parseClass.getUsername() + " has rated you for the class "+ parseClass.getSubject();
 
+        int average = ((sb_perf.getProgress()+sb_prep.getProgress()+sb_subrel.getProgress()+sb_feedback.getProgress()+sb_examples.getProgress()+sb_opportunity.getProgress())/6);
+
         String messageBody =
                 "Hello " + parseClass.getTeacher() + ",\n" + parseClass.getUsername() + " on " +
                         parseClass.getSemester() + " has rated you in the subject: " + parseClass.getSubject() + ".\n\n" +
@@ -182,7 +181,8 @@ public class Subject extends AppCompatActivity {
                         txt_prep.getText().toString() + ": " + sb_prep.getProgress() + "\n" +
                         txt_feedback.getText().toString() + ": " + sb_feedback.getProgress() + "\n" +
                         txt_example.getText().toString() + ": " + sb_examples.getProgress() + "\n" +
-                        txt_opportunity.getText().toString() + ": " + sb_opportunity.getProgress() + "\n";
+                        txt_opportunity.getText().toString() + ": " + sb_opportunity.getProgress() + "\n\n" +
+                        "The average rating is: " + average;
 
         sendEmail.send("Tewzdk@gmail.com",subjectTitle,messageBody);
 

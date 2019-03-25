@@ -43,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
 
     //Uses intent to parse a String to other Activity
